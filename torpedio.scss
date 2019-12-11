@@ -1,0 +1,55 @@
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+@mixin torpedio-col() {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+	padding: 10px 15px;
+	box-sizing: border-box;
+
+	@for $i from 1 through 100 {
+		&-#{$i} {
+			max-width: $i * 1%;
+			flex-basis: $i * 1%;
+		}
+	}
+}
+
+.col {
+	@include torpedio-col();
+}
+
+
+.xs\: {
+	&col {
+		@include torpedio-col();
+	}
+}
+
+@media(min-width: 764px){
+	.sm\: {
+		&col {
+			@include torpedio-col();
+		}
+	}
+}
+
+@media(min-width: 1024px){
+	.md\: {
+		&col {
+			@include torpedio-col();
+		}
+	}
+}
+
+@media(min-width: 1400px){
+	.lg\: {
+		&col {
+			@include torpedio-col();
+		}
+	}
+}
