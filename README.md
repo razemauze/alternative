@@ -67,3 +67,30 @@ on smaller screens, add the classes: `col-100 lg:col-50`.
   </div>
 </div>
 ```
+
+Hide and Stealth
+----------------
+
+Theres two classes for hiding: `.hide` and `.stealth`.
+
+Both `.hide` and `.stealth` can be used with breakpoints by prefixing with the breakpoint (fx. `<div class="md:hide"></div>`).
+
+### Hide
+
+`.hide` is the hard-hide class, which means it gives a `display: none;` property to the element.
+
+### Stealth
+
+`.stealth` is the soft-hide class.
+
+The `.stealth` class looks like this:
+
+```
+.stealth {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+```
+
+This makes for a good oportunity to make a transition to fade in the element, if it is needed after page load.

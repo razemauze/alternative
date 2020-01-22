@@ -11,8 +11,8 @@
 	pointer-events: none;
 }
 
-.xs\:hide,
-.hide {
+.hide,
+.xs\:hide {
 	@include gridstrap-hide();
 }
 
@@ -40,8 +40,8 @@
 	}
 }
 
-.xs\:stealth,
-.stealth {
+.stealth,
+.xs\:stealth {
 	@include gridstrap-stealth();
 }
 
