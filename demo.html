@@ -11,14 +11,14 @@
 		<link rel="stylesheet" type="text/css" href="css/gridstrap.css">
 		<style>
 			body {
-				font-family: 'Muli', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-				background-color: #004680;
 				color: #ffffff;
+				background-color: #004680;
+				font-family: 'Muli', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 			}
 			
 			h1, h2 {
-				font-family: 'Black Ops One', 'Muli', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 				font-weight: 400;
+				font-family: 'Black Ops One', 'Muli', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 			}
 
 			h1 {
@@ -26,43 +26,44 @@
 				position: relative;
 			}
 			h1::before {
+				top: 100%;
+				left: 40%;
+				height: 8px;
 				content: "";
 				width: 260px;
 				display: block;
-				height: 8px;
-				background-color: #ffffff;
-				left: 40%;
 				position: absolute;
-				top: 100%;
+				background-color: #ffffff;
 			}
 
 			h2 {
 				font-size: 35px;
-				margin-top:45px;
+				margin-top: 45px;
 			}
 			
 			.col {
-				margin-bottom:15px;
+				margin-bottom: 15px;
 			}
 			
 			.box {
+				height: 100%;
 				margin: 0 5px;
-				background-color: #0f5c9c;
-				border-radius: 6px;
 				padding: 10px 15px;
+				border-radius: 6px;
+				background-color: #0f5c9c;
 			}
 			
 			.row {
 				width: 90%;
-				max-width: 1400px;
 				margin: 0 auto;
+				max-width: 1400px;
 			}
 
 			code {
-				display: inline-block;
-				background-color: #f2f2f2;
 				padding: 2px;
 				color: #004680;
+				display: inline-block;
+				background-color: #f2f2f2;
 			}
 		</style>
 	</head>
@@ -148,7 +149,8 @@
 				<div class="box">sm:25 xs:50</div>
 			</div>
 			<div class="col xs:col-50 md:col-12">
-				<div class="box">md:12 xs:50</div>
+				<div class="box">md:12 xs:50<br>
+					And it stretches!</div>
 			</div>
 		</div>
 	</body>
