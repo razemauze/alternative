@@ -8,21 +8,21 @@ Just use the `.col` to make the columns slipt evenly across the row.
 
 ```
 <div class="row">
-	<div class="col">
-		<div class="box">col</div>
-	</div>
-	<div class="col">
-		<div class="box">col</div>
-	</div>
-	<div class="col">
-		<div class="box">col</div>
-	</div>
-	<div class="col">
-		<div class="box">col</div>
-	</div>
-	<div class="col">
-		<div class="box">col</div>
-	</div>
+  <div class="col">
+    col
+  </div>
+  <div class="col">
+    col
+  </div>
+  <div class="col">
+    col
+  </div>
+  <div class="col">
+    col
+  </div>
+  <div class="col">
+    col
+  </div>
 </div>
 ```
 
@@ -34,18 +34,16 @@ column should take up
 
 ```
 <div class="row">
-	<div class="col col-50">
-		<div class="box">50%</div>
-	</div>
-	<div class="col col-30">
-		<div class="box">30%</div>
-	</div>
-	<div class="col col-20">
-		<div class="box">
-			20%<br>
-			And it stretches!
-		</div>
-	</div>
+  <div class="col col-50">
+    50%
+  </div>
+  <div class="col col-30">
+    30%
+  </div>
+  <div class="col col-20">
+    20%<br>
+	And it stretches!
+  </div>
 </div>
 ```
 
@@ -66,17 +64,17 @@ on smaller screens, add the classes: `col-100 lg:col-50`.
 
 ```
 <div class="row">
-	<div class="col col-100 md:col-15 sm:col-50">
-		<div class="box">md:15 sm:50</div>
-	</div>
-	<div class="col col-100 md:col-48 sm:col-25">
-		<div class="box">md:48 sm:25</div>
-	</div>
-	<div class="col xs:col-50 sm:col-25">
-		<div class="box">sm:25 xs:50</div>
-	</div>
-	<div class="col xs:col-50 md:col-12">
-		<div class="box">md:12 xs:50</div>
-	</div>
+  <div class="col col-100 md:col-15 sm:col-50">
+    md:15 sm:50
+  </div>
+  <div class="col col-100 md:col-48 sm:col-25">
+    md:48 sm:25
+  </div>
+  <div class="col xs:col-50 sm:col-25">
+    sm:25 xs:50
+  </div>
+  <div class="col xs:col-50 md:col-12">
+    md:12 xs:50
+  </div>
 </div>
 ```
