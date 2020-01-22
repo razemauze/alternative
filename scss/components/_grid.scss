@@ -2,12 +2,13 @@
  * Grid
  */
 .row {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	width: 100%;
+	align-items: stretch;
 }
 
-@mixin torpedio-col() {
+@mixin gridstrap-col() {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
@@ -18,25 +19,26 @@
 		&-#{$i} {
 			max-width: $i * 1%;
 			flex-basis: $i * 1%;
+			flex: 0 0 $i * 1%;
 		}
 	}
 }
 
 .col {
-	@include torpedio-col();
+	@include gridstrap-col();
 }
 
 
 .xs\: {
 	&col {
-		@include torpedio-col();
+		@include gridstrap-col();
 	}
 }
 
 @media(min-width: 768px){
 	.sm\: {
 		&col {
-			@include torpedio-col();
+			@include gridstrap-col();
 		}
 	}
 }
@@ -44,7 +46,7 @@
 @media(min-width: 1024px){
 	.md\: {
 		&col {
-			@include torpedio-col();
+			@include gridstrap-col();
 		}
 	}
 }
@@ -52,7 +54,7 @@
 @media(min-width: 1400px){
 	.lg\: {
 		&col {
-			@include torpedio-col();
+			@include gridstrap-col();
 		}
 	}
 }
