@@ -12,6 +12,7 @@
 		<style>
 			body {
 				color: #ffffff;
+				padding-bottom: 75px;
 				background-color: #004680;
 				font-family: 'Muli', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 			}
@@ -43,6 +44,7 @@
 			
 			.col {
 				margin-bottom: 15px;
+				transition: .3s ease;
 			}
 			
 			.box {
@@ -116,7 +118,7 @@
 			<div class="col-100" style="text-align: center; margin-bottom: 25px;">
 				<h2>Media Queries &amp; breakpoints</h2>
 				Use the breakpoints to make your grid responsive. Just add the breakpoint as a prefix to the col.<br>
-				If you want your div to be 50% on screens larger than 1400px, but 100% on smaller screens, add the classes: <code>col-100 lg:col-50</code>.
+				If you want your div to be 50% on screens larger than 1400px, but 100% on smaller screens, add the classes: <code>col-100 lg:col-50</code>
 			</div>
 
 			<div class="col col-100">
@@ -153,5 +155,43 @@
 					And it stretches!</div>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="col-100" style="text-align: center; margin-bottom: 25px;">
+				<h2>Hide &amp; Stealth</h2>
+				Theres two classes for hiding: <code>.hide</code> and <code>.stealth</code>.<br>
+				<br>
+				Both <code>.hide</code> and <code>.stealth</code> can be used with breakpoints by prefixing with the breakpoint (fx. <code><div class="md:hide"></div></code>).<br>
+				<br>
+				<code>.hide</code> is the hard-hide class, which means it gives a <code>display: none;</code> property to the element.<br>
+				<br>
+				<code>.stealth</code> is the soft-hide class, and consists of <code>opacity: 0; visibility: hidden; pointer-events: none;</code>
+			</div>
+			<div class="col">
+				<div class="box">Shown Column</div>
+			</div>
+			<div id="stealth" class="col stealth">
+				<div class="box">Stealthed</div>
+			</div>
+			<div class="col">
+				<div class="box">Shown Column</div>
+			</div>
+			<div class="col hide">
+				<div class="box">Hidden</div>
+			</div>
+			<div class="col md:hide">
+				<div class="box">Hidden on Landscape iPad and larger</div>
+			</div>
+		</div>
+
+		<script>
+			setInterval(function(){
+				if(document.getElementById('stealth').classList.contains('stealth')){
+					document.getElementById('stealth').classList.remove('stealth');
+				} else {
+					document.getElementById('stealth').classList.add('stealth');
+				}
+			}, 3000);
+		</script>
 	</body>
 </html>
