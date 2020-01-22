@@ -7,28 +7,73 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<title>Gridstrap - Lightweight Flexgrid</title>
 
-		<link rel="stylesheet" type="text/css" href="css/torpedio.css">
+		<link rel="stylesheet" type="text/css" href="css/gridstrap.css">
 		<style>
+			body {
+				font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+			}
+
 			.col {
 				border: 1px solid #aaa;
+				padding: 10px 15px;
+			}
+
+			.row {
+				margin-bottom:15px;
+			}
+
+			h2 {
+				margin-top:45px;
+			}
+
+			code {
+				display: inline-block;
+				background-color: #f2f2f2;
+				padding: 2px;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="row">
-			<div class="col">Fullwidth</div>
+			<div class="col-100" style="text-align: center; margin-bottom: 25px;">
+				<h2>Flexible columns</h2>
+				Just use the <code>.col</code> to make the columns slipt evenly across the row.
+			</div>
+			<div class="col">col</div>
+			<div class="col">col</div>
+			<div class="col">col</div>
+			<div class="col">col</div>
 		</div>
+
 		<div class="row">
-			<div class="col md:col-50 sm:col-25">col md:col-50 sm:col-25</div>
-			<div class="col sm:col-25">col sm:col-25</div>
-			<div class="col md:col-15 sm:col-50">col md:col-15 sm:col-50</div>
-			<div class="col md:col-10">col md:col-10</div>
+			<div class="col-100" style="text-align: center; margin-bottom: 25px;">
+				<h2>Flexible columns with percentages</h2>
+				Gridstraps lets you choose how many percent of the page the current column should take up
+			</div>
+
+			<div class="col col-50">50%</div>
+			<div class="col col-25">25%</div>
+			<div class="col col-15">15%</div>
+			<div class="col col-10">10%</div>
 		</div>
+
 		<div class="row">
-			<div class="col">col</div>
-			<div class="col">col</div>
-			<div class="col">col</div>
-			<div class="col">col</div>
+			<div class="col-100" style="text-align: center; margin-bottom: 25px;">
+				<h2>Media Queries &amp; breakpoints</h2>
+				Use the breakpoints to make your grid responsive. Just add the breakpoint as a prefix to the col.<br>
+				If you want your div to be 50% on screens larger than 1400px, but 100% on smaller screens, add the classes: <code>col-100 lg:col-50</code>.
+			</div>
+			<div class="col col-50 md:col-25">xs: 0 - 767px</div>
+			<div class="col col-50 md:col-25">sm: 768px - 1024px</div>
+			<div class="col col-50 md:col-25">md: 1024px - 1400px</div>
+			<div class="col col-50 md:col-25">lg: 1400px -</div>
+		</div>
+
+		<div class="row">
+			<div class="col col-100 md:col-15 sm:col-50">col col-100 md:col-15 sm:col-50</div>
+			<div class="col col-100 md:col-50 sm:col-25">col col-100 md:col-50 sm:col-25</div>
+			<div class="col xs:col-50 sm:col-25">col xs:col-50 sm:col-25</div>
+			<div class="col xs:col-50 md:col-10">col xs:col-50 md:col-10</div>
 		</div>
 	</body>
 </html>
