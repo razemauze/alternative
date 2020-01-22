@@ -42,7 +42,7 @@ column should take up
   </div>
   <div class="col col-20">
     20%<br>
-	And it stretches!
+    And it stretches!
   </div>
 </div>
 ```
