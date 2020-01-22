@@ -1,5 +1,4 @@
-Gridstrap
-=========
+# Gridstrap
 
 Flexible columns
 ----------------

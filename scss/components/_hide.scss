@@ -1,12 +1,69 @@
 /**
  * Hiding options
  */
+.xs\:hide,
 .hide {
 	display: none !important;
 }
 
+@media(min-width: 768px) {
+	.sm\: {
+		&hide {
+			display: none !important;
+		}
+	}
+}
+
+@media(min-width: 1024px) {
+	.md\: {
+		&hide {
+			display: none !important;
+		}
+	}
+}
+
+@media(min-width: 1400px) {
+	.lg\: {
+		&hide {
+			display: none !important;
+		}
+	}
+}
+
+
+.xs\:stealth,
 .stealth {
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
+}
+
+@media(min-width: 768px) {
+	.sm\: {
+		&stealth {
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+		}
+	}
+}
+
+@media(min-width: 1024px) {
+	.md\: {
+		&stealth {
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+		}
+	}
+}
+
+@media(min-width: 1400px) {
+	.lg\: {
+		&stealth {
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+		}
+	}
 }
