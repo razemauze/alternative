@@ -8,21 +8,11 @@ Just use the `.col` to make the columns slipt evenly across the row.
 
 ```
 <div class="row">
-  <div class="col">
-    col
-  </div>
-  <div class="col">
-    col
-  </div>
-  <div class="col">
-    col
-  </div>
-  <div class="col">
-    col
-  </div>
-  <div class="col">
-    col
-  </div>
+  <div class="col">col</div>
+  <div class="col">col</div>
+  <div class="col">col</div>
+  <div class="col">col</div>
+  <div class="col">col</div>
 </div>
 ```
 
