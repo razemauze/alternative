@@ -81,9 +81,7 @@ Both `.hide` and `.stealth` can be used with breakpoints by prefixing with the b
 
 ### Stealth
 
-`.stealth` is the soft-hide class.
-
-The `.stealth` class looks like this:
+`.stealth` is the soft-hide class, and looks like this:
 
 ```
 .stealth {
