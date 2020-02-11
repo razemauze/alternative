@@ -1,6 +1,10 @@
 # Alternative
 
-Alternative is a small (62 KB Minified, 5 KB Gzipped), low-styled HTML & CSS grid-setup.  
+Alternative is a small, low-styled HTML & CSS grid-setup.
+
+The size of Minified Alternative is: ~62 kB.  
+The size of Minified and Gzipped Alternative is: ~5 kB.
+
 As an alternative to Bootstrap and Flexbox Grid, Alternative, uses some of the same methods, but gives you, as a developer, more possibilities to customize and style you website.
 
 CDN: `https://cdn.jsdelivr.net/gh/rasmusbihllarsen/alternative/css/alternative.css`
