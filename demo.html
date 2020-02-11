@@ -248,6 +248,9 @@
 		</div>
 
 		<script>
+			/**
+			 * Toggle stealth-class, to make it hide and appear
+			 */
 			setInterval(function(){
 				if(document.getElementById('stealth').classList.contains('stealth')){
 					document.getElementById('stealth').classList.remove('stealth');
@@ -256,6 +259,9 @@
 				}
 			}, 3000);
 
+			/**
+			 * Toggle styles-class, to show/hide the custom styling
+			 */
 			document.getElementById('toggle_styles').addEventListener('click', function(event){
 				event.preventDefault();
 
