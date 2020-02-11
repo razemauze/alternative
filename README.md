@@ -77,10 +77,10 @@ on smaller screens, add the classes: `col-100 lg:col-50`.
 
 **Breakpoints:**
 
-- xs: 0 - 767px
-- sm: 768px - 1024px
-- md: 1024px - 1400px
-- lg: 1400px +
+- xs, min-width: 0px
+- sm, min-width: 768px
+- md, min-width: 1024px
+- lg, min-width: 1400px
 
 ```
 <div class="row">

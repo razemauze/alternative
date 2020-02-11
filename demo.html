@@ -16,10 +16,11 @@
 				background-color: #ffffff;
 				font-family: 'Muli', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 			}
-			
+
 			h1,
 			.styled h2 {
 				font-weight: 400;
+				color: #004680;
 				font-family: 'Black Ops One', 'Muli', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 			}
 			
@@ -187,16 +188,16 @@
 				</div>
 			</div>
 			<div class="col col-50 md:col-25">
-				<div class="box">xs: 0 - 767px</div>
+				<div class="box">xs, min-width: 0px</div>
 			</div>
 			<div class="col col-50 md:col-25">
-				<div class="box">sm: 768px - 1024px</div>
+				<div class="box">sm, min-width: 768px</div>
 			</div>
 			<div class="col col-50 md:col-25">
-				<div class="box">md: 1024px - 1400px</div>
+				<div class="box">md, min-width: 1024px</div>
 			</div>
 			<div class="col col-50 md:col-25">
-				<div class="box">lg: 1400px +</div>
+				<div class="box">lg, min-width: 1400px</div>
 			</div>
 		</div>
 
@@ -229,19 +230,19 @@
 			</div>
 		</div>
 		<div class="row colorized">
-			<div class="col">
+			<div class="col col-50 md:col">
 				<div class="box">Shown Column</div>
 			</div>
-			<div id="stealth" class="col stealth">
+			<div id="stealth" class="col col-50 md:col stealth">
 				<div class="box">Stealthed</div>
 			</div>
-			<div class="col">
+			<div class="col col-50 md:col">
 				<div class="box">Shown Column</div>
 			</div>
-			<div class="col hide">
+			<div class="col col-50 md:col hide">
 				<div class="box">Hidden</div>
 			</div>
-			<div class="col md:hide">
+			<div class="col col-50 md:col md:hide">
 				<div class="box">Hidden on 1024px and larger</div>
 			</div>
 		</div>
