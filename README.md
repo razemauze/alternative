@@ -1,6 +1,6 @@
 # Alternative
 
-Alternative is a small (62 KB), low-styled HTML & CSS grid-setup.  
+Alternative is a small (60,8 KB), low-styled HTML & CSS grid-setup.  
 As an alternative to Bootstrap and Flexbox Grid, Alternative, uses some of the same methods, but gives you, as a developer, more possibilities to customize and style you website.
 
 CDN: `https://cdn.jsdelivr.net/gh/rasmusbihllarsen/alternative/css/alternative.css`
