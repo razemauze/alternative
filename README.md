@@ -50,21 +50,21 @@ Two types of Rows
 
 ```
 <div class="row">
-	<div class="col col-50">
-		<div class="box">50%</div>
-	</div>
-	<div class="col col-50">
-		<div class="box">50%</div>
-	</div>
+  <div class="col col-50">
+    <div class="box">50%</div>
+  </div>
+  <div class="col col-50">
+    <div class="box">50%</div>
+  </div>
 </div>
 
 <div class="row__full">
-	<div class="col col-50">
-		<div class="box">50%</div>
-	</div>
-	<div class="col col-50">
-		<div class="box">50%</div>
-	</div>
+  <div class="col col-50">
+    <div class="box">50%</div>
+  </div>
+  <div class="col col-50">
+    <div class="box">50%</div>
+  </div>
 </div>
 ```
 
