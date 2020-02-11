@@ -8,7 +8,8 @@
 	flex-wrap: wrap;
 	align-items: stretch;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+	padding: 0 10px;
 }
 
 .row,
@@ -21,10 +22,10 @@
 }
 
 @mixin gridstrap-col() {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-	padding: 10px 15px;
+	flex-basis: 0;
+	flex-grow: 1;
+	max-width: 100%;
+	padding: 10px;
 	box-sizing: border-box;
 
 	@for $i from 1 through 100 {
@@ -47,7 +48,7 @@
 	}
 }
 
-@media(min-width: 768px){
+@media(min-width: 768px) {
 	.sm\: {
 		&col {
 			@include gridstrap-col();
@@ -55,7 +56,7 @@
 	}
 }
 
-@media(min-width: 1024px){
+@media(min-width: 1024px) {
 	.md\: {
 		&col {
 			@include gridstrap-col();
@@ -63,7 +64,7 @@
 	}
 }
 
-@media(min-width: 1400px){
+@media(min-width: 1400px) {
 	.lg\: {
 		&col {
 			@include gridstrap-col();
