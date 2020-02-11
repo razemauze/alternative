@@ -34,7 +34,7 @@ Just use the `.col` to make the columns slipt evenly across the row.
 Flexible columns with percentages
 ---------------------------------
 
-Gridstraps lets you choose how many percent of the page the current
+Alternative lets you choose how many percent of the page the current
 column should take up
 
 ```
