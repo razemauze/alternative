@@ -45,7 +45,7 @@ column should take up
 Two types of Rows
 -----------------
 
-`.row` has a max-width of 1400px.
+`.row` has a max-width of 1400px.  
 `.row__full` has no max-width.
 
 ```
@@ -71,8 +71,7 @@ Two types of Rows
 Media Queries & breakpoints
 ---------------------------
 
-Use the breakpoints to make your grid responsive. Just add the
-breakpoint as a prefix to the col.  
+Use the breakpoints to make your grid responsive. Just add the breakpoint as a prefix to the col.  
 If you want your div to be 50% on screens larger than 1400px, but 100%
 on smaller screens, add the classes: `col-100 lg:col-50`.
 
