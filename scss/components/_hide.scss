@@ -16,7 +16,7 @@
 	@include gridstrap-hide();
 }
 
-@media(min-width: 768px) {
+@media(min-width: $sm) {
 	.sm\: {
 		&hide {
 			@include gridstrap-hide();
@@ -24,7 +24,7 @@
 	}
 }
 
-@media(min-width: 1024px) {
+@media(min-width: $md) {
 	.md\: {
 		&hide {
 			@include gridstrap-hide();
@@ -32,7 +32,7 @@
 	}
 }
 
-@media(min-width: 1400px) {
+@media(min-width: $lg) {
 	.lg\: {
 		&hide {
 			@include gridstrap-hide();
@@ -45,7 +45,7 @@
 	@include gridstrap-stealth();
 }
 
-@media(min-width: 768px) {
+@media(min-width: $sm) {
 	.sm\: {
 		&stealth {
 			@include gridstrap-stealth();
@@ -53,7 +53,7 @@
 	}
 }
 
-@media(min-width: 1024px) {
+@media(min-width: $md) {
 	.md\: {
 		&stealth {
 			@include gridstrap-stealth();
@@ -61,7 +61,7 @@
 	}
 }
 
-@media(min-width: 1400px) {
+@media(min-width: $lg) {
 	.lg\: {
 		&stealth {
 			@include gridstrap-stealth();
