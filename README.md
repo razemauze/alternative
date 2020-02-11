@@ -1,5 +1,11 @@
 # Gridstrap
 
+Minimal styling
+---------------
+
+For more freedom, theres minimal styling to `.row`s and `.col`s.
+
+
 Flexible columns
 ----------------
 
@@ -33,6 +39,32 @@ column should take up
     20%<br>
     And it stretches!
   </div>
+</div>
+```
+
+Two types of Rows
+-----------------
+
+`.row` has a max-width of 1400px.
+`.row__full` has no max-width.
+
+```
+<div class="row">
+	<div class="col col-50">
+		<div class="box">50%</div>
+	</div>
+	<div class="col col-50">
+		<div class="box">50%</div>
+	</div>
+</div>
+
+<div class="row__full">
+	<div class="col col-50">
+		<div class="box">50%</div>
+	</div>
+	<div class="col col-50">
+		<div class="box">50%</div>
+	</div>
 </div>
 ```
 
