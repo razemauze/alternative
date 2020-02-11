@@ -1,6 +1,6 @@
 # Gridstrap
 
-`https://cdn.jsdelivr.net/gh/rasmusbihllarsen/gridstrap/css/gridstrap.css`
+CDN: `https://cdn.jsdelivr.net/gh/rasmusbihllarsen/gridstrap/css/gridstrap.css`
 
 Minimal styling
 ---------------
