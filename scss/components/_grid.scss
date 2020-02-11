@@ -1,11 +1,23 @@
 /**
  * Grid
  */
-.row {
+
+%row {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.row,
+.row__full {
+	@extend %row;
+}
+
+.row {
+	max-width: 1400px;
 }
 
 @mixin gridstrap-col() {
