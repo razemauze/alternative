@@ -7,6 +7,7 @@ The size of Minified and Gzipped Alternative is: ~5 kB.
 
 As an alternative to Bootstrap and Flexbox Grid, Alternative, uses some of the same methods, but gives you, as a developer, more possibilities to customize and style you website.
 
+You can download the CSS- og SCSS-files and import them directly into your project, or use this repository as CDN.  
 CDN: `https://cdn.jsdelivr.net/gh/rasmusbihllarsen/alternative/css/alternative.css`
 
 Minimal styling
