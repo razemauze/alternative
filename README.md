@@ -5,7 +5,7 @@ Alternative is a small, low-styled HTML & CSS grid-setup.
 The size of Minified Alternative is: __~62 kB__.  
 The size of Minified and Gzipped Alternative is: __~5 kB__.
 
-As an alternative to Bootstrap and Flexbox Grid, Alternative, uses some of the same methods, but gives you, as a developer, more possibilities to customize and style you website.
+As an alternative to Bootstrap and Flexbox Grid, Alternative, uses some of the same methods, but gives you, as a developer, more possibilities to customize and style your website.
 
 You can download the CSS- og SCSS-files and import them directly into your project, or use this repository as CDN.  
 CDN: `https://cdn.jsdelivr.net/gh/razemauze/alternative@v1.0/css/alternative.css`
@@ -19,7 +19,7 @@ For more freedom, theres minimal styling to `.row`s and `.col`s.
 Flexible columns
 ----------------
 
-Just use the `.col` to make the columns slipt evenly across the row.
+Just use the `.col` to make the columns split evenly across the row.
 
 ```
 <div class="row">
