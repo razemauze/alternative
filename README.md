@@ -152,7 +152,7 @@ You can add a specific way to set the display if you fx want to display as flex,
 `.unstealth` is the opposite of `.stealth` and looks like this:
 
 ```
-.stealth {
+.unstealth {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
