@@ -133,3 +133,28 @@ Both `.hide` and `.stealth` can be used with breakpoints by prefixing with the b
 ```
 
 This makes for a good oportunity to make a transition to fade in the element, if it is needed after page load.
+
+Show and Unstealth
+----------------
+
+Theres two classes for showing: `.show` and `.unstealth`.
+
+Both `.show` and `.unstealth` can be used with breakpoints by prefixing with the breakpoint (fx. `<div class="md:show"></div>`).
+
+### Show
+
+`.show` is the hard-hide class, which means it gives a `display: block;` property to the element.
+
+You can add a specific way to set the display if you fx want to display as flex, you can write `.show--flex`.
+
+### Unstealth
+
+`.unstealth` is the opposite of `.stealth` and looks like this:
+
+```
+.stealth {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+```
