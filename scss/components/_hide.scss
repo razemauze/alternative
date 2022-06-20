@@ -1,70 +1,478 @@
 /**
  * Hiding options
  */
-@mixin gridstrap-hide() {
-    display: none !important;
-}
-
-@mixin gridstrap-stealth() {
-    opacity: 0;
-	visibility: hidden;
-	pointer-events: none;
-}
-
 .hide,
 .xs\:hide {
-	@include gridstrap-hide();
+	display: none !important;
 }
 
-@media(min-width: $sm) {
+.show,
+.xs\:show {
+	display: block !important;
+
+	&--inline {
+		display: inline !important;
+	}
+
+	&--block {
+		display: block !important;
+	}
+
+	&--contents {
+		display: contents !important;
+	}
+
+	&--flex {
+		display: flex !important;
+	}
+
+	&--grid {
+		display: grid !important;
+	}
+
+	&--inline-block {
+		display: inline-block !important;
+	}
+
+	&--inline-flex {
+		display: inline-flex !important;
+	}
+
+	&--inline-grid {
+		display: inline-grid !important;
+	}
+
+	&--inline-table {
+		display: inline-table !important;
+	}
+
+	&--list-item {
+		display: list-item !important;
+	}
+
+	&--run-in {
+		display: run-in !important;
+	}
+
+	&--table {
+		display: table !important;
+	}
+
+	&--table-caption {
+		display: table-caption !important;
+	}
+
+	&--table-column-group {
+		display: table-column-group !important;
+	}
+
+	&--table-header-group {
+		display: table-header-group !important;
+	}
+
+	&--table-footer-group {
+		display: table-footer-group !important;
+	}
+
+	&--table-row-group {
+		display: table-row-group !important;
+	}
+
+	&--table-cell {
+		display: table-cell !important;
+	}
+
+	&--table-column {
+		display: table-column !important;
+	}
+
+	&--table-row {
+		display: table-row !important;
+	}
+
+	&--initial {
+		display: initial !important;
+	}
+
+	&--inherit {
+		display: inherit !important;
+	}
+}
+
+@include breakpoint(sm) {
 	.sm\: {
 		&hide {
-			@include gridstrap-hide();
+			display: none !important;
+		}
+
+		&show {
+			display: block !important;
+
+			&--inline {
+				display: inline !important;
+			}
+
+			&--block {
+				display: block !important;
+			}
+
+			&--contents {
+				display: contents !important;
+			}
+
+			&--flex {
+				display: flex !important;
+			}
+
+			&--grid {
+				display: grid !important;
+			}
+
+			&--inline-block {
+				display: inline-block !important;
+			}
+
+			&--inline-flex {
+				display: inline-flex !important;
+			}
+
+			&--inline-grid {
+				display: inline-grid !important;
+			}
+
+			&--inline-table {
+				display: inline-table !important;
+			}
+
+			&--list-item {
+				display: list-item !important;
+			}
+
+			&--run-in {
+				display: run-in !important;
+			}
+
+			&--table {
+				display: table !important;
+			}
+
+			&--table-caption {
+				display: table-caption !important;
+			}
+
+			&--table-column-group {
+				display: table-column-group !important;
+			}
+
+			&--table-header-group {
+				display: table-header-group !important;
+			}
+
+			&--table-footer-group {
+				display: table-footer-group !important;
+			}
+
+			&--table-row-group {
+				display: table-row-group !important;
+			}
+
+			&--table-cell {
+				display: table-cell !important;
+			}
+
+			&--table-column {
+				display: table-column !important;
+			}
+
+			&--table-row {
+				display: table-row !important;
+			}
+
+			&--initial {
+				display: initial !important;
+			}
+
+			&--inherit {
+				display: inherit !important;
+			}
 		}
 	}
 }
 
-@media(min-width: $md) {
+@include breakpoint(md) {
 	.md\: {
 		&hide {
-			@include gridstrap-hide();
+			display: none !important;
+		}
+
+		&show {
+			display: block !important;
+
+			&--inline {
+				display: inline !important;
+			}
+
+			&--block {
+				display: block !important;
+			}
+
+			&--contents {
+				display: contents !important;
+			}
+
+			&--flex {
+				display: flex !important;
+			}
+
+			&--grid {
+				display: grid !important;
+			}
+
+			&--inline-block {
+				display: inline-block !important;
+			}
+
+			&--inline-flex {
+				display: inline-flex !important;
+			}
+
+			&--inline-grid {
+				display: inline-grid !important;
+			}
+
+			&--inline-table {
+				display: inline-table !important;
+			}
+
+			&--list-item {
+				display: list-item !important;
+			}
+
+			&--run-in {
+				display: run-in !important;
+			}
+
+			&--table {
+				display: table !important;
+			}
+
+			&--table-caption {
+				display: table-caption !important;
+			}
+
+			&--table-column-group {
+				display: table-column-group !important;
+			}
+
+			&--table-header-group {
+				display: table-header-group !important;
+			}
+
+			&--table-footer-group {
+				display: table-footer-group !important;
+			}
+
+			&--table-row-group {
+				display: table-row-group !important;
+			}
+
+			&--table-cell {
+				display: table-cell !important;
+			}
+
+			&--table-column {
+				display: table-column !important;
+			}
+
+			&--table-row {
+				display: table-row !important;
+			}
+
+			&--initial {
+				display: initial !important;
+			}
+
+			&--inherit {
+				display: inherit !important;
+			}
 		}
 	}
 }
 
-@media(min-width: $lg) {
+@include breakpoint(lg) {
 	.lg\: {
 		&hide {
-			@include gridstrap-hide();
+			display: none !important;
+		}
+
+		&show {
+			display: block !important;
+
+			&--inline {
+				display: inline !important;
+			}
+
+			&--block {
+				display: block !important;
+			}
+
+			&--contents {
+				display: contents !important;
+			}
+
+			&--flex {
+				display: flex !important;
+			}
+
+			&--grid {
+				display: grid !important;
+			}
+
+			&--inline-block {
+				display: inline-block !important;
+			}
+
+			&--inline-flex {
+				display: inline-flex !important;
+			}
+
+			&--inline-grid {
+				display: inline-grid !important;
+			}
+
+			&--inline-table {
+				display: inline-table !important;
+			}
+
+			&--list-item {
+				display: list-item !important;
+			}
+
+			&--run-in {
+				display: run-in !important;
+			}
+
+			&--table {
+				display: table !important;
+			}
+
+			&--table-caption {
+				display: table-caption !important;
+			}
+
+			&--table-column-group {
+				display: table-column-group !important;
+			}
+
+			&--table-header-group {
+				display: table-header-group !important;
+			}
+
+			&--table-footer-group {
+				display: table-footer-group !important;
+			}
+
+			&--table-row-group {
+				display: table-row-group !important;
+			}
+
+			&--table-cell {
+				display: table-cell !important;
+			}
+
+			&--table-column {
+				display: table-column !important;
+			}
+
+			&--table-row {
+				display: table-row !important;
+			}
+
+			&--initial {
+				display: initial !important;
+			}
+
+			&--inherit {
+				display: inherit !important;
+			}
 		}
 	}
 }
 
 .stealth,
 .xs\:stealth {
-	@include gridstrap-stealth();
+	%stealth {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
 }
 
-@media(min-width: $sm) {
+.unstealth,
+.xs\:unstealth {
+	%unstealth {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: all;
+	}
+}
+
+@include breakpoint(sm) {
 	.sm\: {
 		&stealth {
-			@include gridstrap-stealth();
+			%stealth {
+				opacity: 0;
+				visibility: hidden;
+				pointer-events: none;
+			}
+		}
+
+		&unstealth {
+			%unstealth {
+				opacity: 1;
+				visibility: visible;
+				pointer-events: all;
+			}
 		}
 	}
 }
 
-@media(min-width: $md) {
+@include breakpoint(md) {
 	.md\: {
 		&stealth {
-			@include gridstrap-stealth();
+			%stealth {
+				opacity: 0;
+				visibility: hidden;
+				pointer-events: none;
+			}
+		}
+
+		&unstealth {
+			%unstealth {
+				opacity: 1;
+				visibility: visible;
+				pointer-events: all;
+			}
 		}
 	}
 }
 
-@media(min-width: $lg) {
+@include breakpoint(lg) {
 	.lg\: {
 		&stealth {
-			@include gridstrap-stealth();
+			%stealth {
+				opacity: 0;
+				visibility: hidden;
+				pointer-events: none;
+			}
+		}
+
+		&unstealth {
+			%unstealth {
+				opacity: 1;
+				visibility: visible;
+				pointer-events: all;
+			}
 		}
 	}
 }

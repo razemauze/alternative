@@ -2,16 +2,6 @@
  * Grid
  */
 
-%row {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0 10px;
-}
-
 .row,
 .row__full {
 	@extend %row;
@@ -21,53 +11,37 @@
 	max-width: $lg;
 }
 
-@mixin gridstrap-col() {
-	flex-basis: 0;
-	flex-grow: 1;
-	max-width: 100%;
-	padding: 10px;
-	box-sizing: border-box;
-
-	@for $i from 1 through 100 {
-		&-#{$i} {
-			max-width: $i * 1%;
-			flex-basis: $i * 1%;
-			flex: 0 0 $i * 1%;
-		}
-	}
-}
-
 .col {
-	@include gridstrap-col();
+	@include alternative-col();
 }
 
 
 .xs\: {
 	&col {
-		@include gridstrap-col();
+		@include alternative-col();
 	}
 }
 
-@media(min-width: $sm) {
+@include breakpoint(sm) {
 	.sm\: {
 		&col {
-			@include gridstrap-col();
+			@include alternative-col();
 		}
 	}
 }
 
-@media(min-width: $md) {
+@include breakpoint(md) {
 	.md\: {
 		&col {
-			@include gridstrap-col();
+			@include alternative-col();
 		}
 	}
 }
 
-@media(min-width: $lg) {
+@include breakpoint(lg) {
 	.lg\: {
 		&col {
-			@include gridstrap-col();
+			@include alternative-col();
 		}
 	}
 }

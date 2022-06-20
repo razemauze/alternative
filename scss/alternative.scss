@@ -1,7 +1,11 @@
 /*! Alternative - An alternative to Bootstrap and Flexboxgrid | Github: https://github.com/rasmusbihllarsen/alternative */
 
 @import 'base/normalize';
-@import 'base/variables';
+
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/placeholders';
+
 @import 'base/standard';
 
 @import 'components/hide';

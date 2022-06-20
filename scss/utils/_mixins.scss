@@ -1,0 +1,36 @@
+/**
+ * Mixins
+ */
+
+/**
+ * Alternative Cols.
+ * 
+ * This is made as a mixin, because of the need
+ * for at for-loop inside, which could not be
+ * done with a placeholder.
+ */
+@mixin alternative-col() {
+	flex-basis: 0;
+	flex-grow: 1;
+	max-width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+
+	@for $i from 1 through 100 {
+		&-#{$i} {
+			max-width: $i * 1%;
+			flex-basis: $i * 1%;
+			flex: 0 0 $i * 1%;
+		}
+	}
+}
+
+@mixin breakpoint($point) {
+    @if $point == sm {
+        @media (min-width: 768px) { @content; }
+    } @else if $point == md {
+        @media (min-width: 1024px) { @content; }
+    } @else if $point == lg {
+        @media (min-width: 1400px)  { @content; }
+    }
+}
