@@ -25,6 +25,14 @@
 	}
 }
 
+@mixin order() {
+	@for $i from 1 through 10 {
+		&-#{$i} {
+			order: $i;
+		}
+	}
+}
+
 @mixin breakpoint($point) {
     @if $point == sm {
         @media (min-width: 768px) { @content; }

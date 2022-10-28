@@ -17,3 +17,75 @@
 .flex-column.flex-reverse {
 	flex-direction: column-reverse;
 }
+
+@include breakpoint(sm) {
+	.sm\: {
+		&flex {
+			display: flex;
+		}
+		
+		&flex-row {
+			flex-direction: row;
+		}
+		
+		&flex-reverse {
+			flex-direction: row-reverse;
+		}
+		
+		&flex-column {
+			flex-direction: column;
+		}
+		
+		&flex-column.flex-reverse {
+			flex-direction: column-reverse;
+		}
+	}
+}
+
+@include breakpoint(md) {
+	.md\: {
+		&flex {
+			display: flex;
+		}
+		
+		&flex-row {
+			flex-direction: row;
+		}
+		
+		&flex-reverse {
+			flex-direction: row-reverse;
+		}
+		
+		&flex-column {
+			flex-direction: column;
+		}
+		
+		&flex-column.flex-reverse {
+			flex-direction: column-reverse;
+		}
+	}
+}
+
+@include breakpoint(lg) {
+	.lg\: {
+		&flex {
+			display: flex;
+		}
+		
+		&flex-row {
+			flex-direction: row;
+		}
+		
+		&flex-reverse {
+			flex-direction: row-reverse;
+		}
+		
+		&flex-column {
+			flex-direction: column;
+		}
+		
+		&flex-column.flex-reverse {
+			flex-direction: column-reverse;
+		}
+	}
+}

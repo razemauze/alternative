@@ -1,5 +1,27 @@
-@for $i from 1 through 10 {
-	.order-#{$i} {
-		order: $i;
+.order {
+	@include order();
+}
+
+@include breakpoint(sm) {
+	.sm\: {
+		&order {
+			@include order();
+		}
+	}
+}
+
+@include breakpoint(md) {
+	.md\: {
+		&order {
+			@include order();
+		}
+	}
+}
+
+@include breakpoint(lg) {
+	.lg\: {
+		&order {
+			@include order();
+		}
 	}
 }
