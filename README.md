@@ -158,3 +158,17 @@ You can add a specific way to set the display if you fx want to display as flex,
   pointer-events: all;
 }
 ```
+
+Flex and Order
+----------------
+
+### Flex
+
+`.flex` gives the div `display: flex;`.
+`.flex-row` gives the div `flex-direction: row;`.
+`.flex-column` gives the div `flex-direction: column;`.
+`.flex-reverse` gives the div `flex-direction: row-reverse;`. If the flex-direction is column, it will give `flex-direction: column-reverse;`
+
+### Order
+
+You can give order-classes from 1 to 10, like `.order-n`
