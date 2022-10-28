@@ -166,8 +166,9 @@ Flex and Order
 
 `.flex` gives the div `display: flex;`.
 `.flex-row` gives the div `flex-direction: row;`.
+`.flex-row-reverse` gives the div `flex-direction: row-reverse;`.
 `.flex-column` gives the div `flex-direction: column;`.
-`.flex-reverse` gives the div `flex-direction: row-reverse;`. If the flex-direction is column, it will give `flex-direction: column-reverse;`
+`.flex-colum-reverse` gives the div `flex-direction: column-reverse;`.
 
 ### Order
 
