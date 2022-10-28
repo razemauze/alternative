@@ -16,7 +16,7 @@ function defaultTask(cb) {
 
 // Styles changes
 gulp.task('styles', function () {
-	var sass		= require('gulp-sass')
+	var sass		= require('gulp-sass')(require('sass'))
 	var cssnano		= require('gulp-cssnano');
 	var sourcemaps	= require('gulp-sourcemaps');
 	var postcss		= require('gulp-postcss');
