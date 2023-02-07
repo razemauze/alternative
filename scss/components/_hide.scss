@@ -401,38 +401,30 @@
 
 .stealth,
 .xs\:stealth {
-	%stealth {
-		opacity: 0;
-		visibility: hidden;
-		pointer-events: none;
-	}
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
 }
 
 .unstealth,
 .xs\:unstealth {
-	%unstealth {
-		opacity: 1;
-		visibility: visible;
-		pointer-events: all;
-	}
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
 }
 
 @include breakpoint(sm) {
 	.sm\: {
 		&stealth {
-			%stealth {
-				opacity: 0;
-				visibility: hidden;
-				pointer-events: none;
-			}
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
 		}
 
 		&unstealth {
-			%unstealth {
-				opacity: 1;
-				visibility: visible;
-				pointer-events: all;
-			}
+			opacity: 1;
+			visibility: visible;
+			pointer-events: all;
 		}
 	}
 }
@@ -440,19 +432,15 @@
 @include breakpoint(md) {
 	.md\: {
 		&stealth {
-			%stealth {
-				opacity: 0;
-				visibility: hidden;
-				pointer-events: none;
-			}
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
 		}
 
 		&unstealth {
-			%unstealth {
-				opacity: 1;
-				visibility: visible;
-				pointer-events: all;
-			}
+			opacity: 1;
+			visibility: visible;
+			pointer-events: all;
 		}
 	}
 }
@@ -460,19 +448,15 @@
 @include breakpoint(lg) {
 	.lg\: {
 		&stealth {
-			%stealth {
-				opacity: 0;
-				visibility: hidden;
-				pointer-events: none;
-			}
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
 		}
 
 		&unstealth {
-			%unstealth {
-				opacity: 1;
-				visibility: visible;
-				pointer-events: all;
-			}
+			opacity: 1;
+			visibility: visible;
+			pointer-events: all;
 		}
 	}
 }
