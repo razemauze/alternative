@@ -1,0 +1,115 @@
+@each $size, $length in $spacers {
+	.mt-#{$size},
+	.my-#{$size} {
+		margin-top: $length;
+	}
+	
+	.mb-#{$size},
+	.my-#{$size} {
+		margin-bottom: $length;
+	}
+	
+	.ms-#{$size},
+	.mx-#{$size} {
+		margin-left: $length;
+	}
+	
+	.me-#{$size},
+	.mx-#{$size} {
+		margin-right: $length;
+	}
+	
+	.m-#{$size} {
+		margin: $length;
+	}
+}
+
+@include breakpoint(sm) {
+	.sm\: {
+		@each $size, $length in $spacers {
+			&mt-#{$size},
+			&my-#{$size} {
+				margin-top: $length;
+			}
+			
+			&mb-#{$size},
+			&my-#{$size} {
+				margin-bottom: $length;
+			}
+			
+			&ms-#{$size},
+			&mx-#{$size} {
+				margin-left: $length;
+			}
+			
+			&me-#{$size},
+			&mx-#{$size} {
+				margin-right: $length;
+			}
+			
+			&m-#{$size} {
+				margin: $length;
+			}
+		}
+	}
+}
+
+@include breakpoint(md) {
+	.md\: {
+		@each $size, $length in $spacers {
+			&mt-#{$size},
+			&my-#{$size} {
+				margin-top: $length;
+			}
+			
+			&mb-#{$size},
+			&my-#{$size} {
+				margin-bottom: $length;
+			}
+			
+			&ms-#{$size},
+			&mx-#{$size} {
+				margin-left: $length;
+			}
+			
+			&me-#{$size},
+			&mx-#{$size} {
+				margin-right: $length;
+			}
+			
+			&m-#{$size} {
+				margin: $length;
+			}
+		}
+	}
+}
+
+@include breakpoint(lg) {
+	.lg\: {
+		@each $size, $length in $spacers {
+			&mt-#{$size},
+			&my-#{$size} {
+				margin-top: $length;
+			}
+			
+			&mb-#{$size},
+			&my-#{$size} {
+				margin-bottom: $length;
+			}
+			
+			&ms-#{$size},
+			&mx-#{$size} {
+				margin-left: $length;
+			}
+			
+			&me-#{$size},
+			&mx-#{$size} {
+				margin-right: $length;
+			}
+			
+			&m-#{$size} {
+				margin: $length;
+			}
+		}
+	}
+}
