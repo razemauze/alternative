@@ -87,7 +87,7 @@ on smaller screens, add the classes: `col-100 lg:col-50`.
 
 **Breakpoints:**
 
-- xs, min-width: 0px
+- No prefix, min-width: 0px
 - sm, min-width: 768px
 - md, min-width: 1024px
 - lg, min-width: 1400px
@@ -100,11 +100,11 @@ on smaller screens, add the classes: `col-100 lg:col-50`.
   <div class="col col-100 md:col-48 sm:col-25">
     md:48 sm:25
   </div>
-  <div class="col xs:col-50 sm:col-25">
-    sm:25 xs:50
+  <div class="col col-50 sm:col-25">
+    50 sm:25
   </div>
-  <div class="col xs:col-50 md:col-12">
-    md:12 xs:50
+  <div class="col col-50 md:col-12">
+    50 md:12
   </div>
 </div>
 ```
