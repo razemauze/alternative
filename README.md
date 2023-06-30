@@ -56,7 +56,7 @@ Two types of Rows
 -----------------
 
 `.row` has a max-width of 1400px.  
-`.row__full` has no max-width.
+`.row--full` has no max-width.
 
 ```
 <div class="row">
@@ -68,7 +68,7 @@ Two types of Rows
   </div>
 </div>
 
-<div class="row__full">
+<div class="row--full">
   <div class="col col-50">
     <div class="box">50%</div>
   </div>
