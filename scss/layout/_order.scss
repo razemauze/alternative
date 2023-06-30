@@ -2,26 +2,12 @@
 	@include order();
 }
 
-@include breakpoint-up(sm) {
-	.sm\: {
-		&order {
-			@include order();
-		}
-	}
-}
-
-@include breakpoint-up(md) {
-	.md\: {
-		&order {
-			@include order();
-		}
-	}
-}
-
-@include breakpoint-up(lg) {
-	.lg\: {
-		&order {
-			@include order();
+@each $point, $point_size in $grid-breakpoints {
+	@include breakpoint-up($point) {
+		.#{$point}\: {
+			&order {
+				@include order();
+			}
 		}
 	}
 }

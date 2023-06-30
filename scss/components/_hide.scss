@@ -8,390 +8,26 @@
 .show {
 	display: block !important;
 
-	&--inline {
-		display: inline !important;
-	}
-
-	&--block {
-		display: block !important;
-	}
-
-	&--contents {
-		display: contents !important;
-	}
-
-	&--flex {
-		display: flex !important;
-	}
-
-	&--grid {
-		display: grid !important;
-	}
-
-	&--inline-block {
-		display: inline-block !important;
-	}
-
-	&--inline-flex {
-		display: inline-flex !important;
-	}
-
-	&--inline-grid {
-		display: inline-grid !important;
-	}
-
-	&--inline-table {
-		display: inline-table !important;
-	}
-
-	&--list-item {
-		display: list-item !important;
-	}
-
-	&--run-in {
-		display: run-in !important;
-	}
-
-	&--table {
-		display: table !important;
-	}
-
-	&--table-caption {
-		display: table-caption !important;
-	}
-
-	&--table-column-group {
-		display: table-column-group !important;
-	}
-
-	&--table-header-group {
-		display: table-header-group !important;
-	}
-
-	&--table-footer-group {
-		display: table-footer-group !important;
-	}
-
-	&--table-row-group {
-		display: table-row-group !important;
-	}
-
-	&--table-cell {
-		display: table-cell !important;
-	}
-
-	&--table-column {
-		display: table-column !important;
-	}
-
-	&--table-row {
-		display: table-row !important;
-	}
-
-	&--initial {
-		display: initial !important;
-	}
-
-	&--inherit {
-		display: inherit !important;
-	}
-}
-
-@include breakpoint-up(sm) {
-	.sm\: {
-		&hide {
-			display: none !important;
-		}
-
-		&show {
-			display: block !important;
-
-			&--inline {
-				display: inline !important;
-			}
-
-			&--block {
-				display: block !important;
-			}
-
-			&--contents {
-				display: contents !important;
-			}
-
-			&--flex {
-				display: flex !important;
-			}
-
-			&--grid {
-				display: grid !important;
-			}
-
-			&--inline-block {
-				display: inline-block !important;
-			}
-
-			&--inline-flex {
-				display: inline-flex !important;
-			}
-
-			&--inline-grid {
-				display: inline-grid !important;
-			}
-
-			&--inline-table {
-				display: inline-table !important;
-			}
-
-			&--list-item {
-				display: list-item !important;
-			}
-
-			&--run-in {
-				display: run-in !important;
-			}
-
-			&--table {
-				display: table !important;
-			}
-
-			&--table-caption {
-				display: table-caption !important;
-			}
-
-			&--table-column-group {
-				display: table-column-group !important;
-			}
-
-			&--table-header-group {
-				display: table-header-group !important;
-			}
-
-			&--table-footer-group {
-				display: table-footer-group !important;
-			}
-
-			&--table-row-group {
-				display: table-row-group !important;
-			}
-
-			&--table-cell {
-				display: table-cell !important;
-			}
-
-			&--table-column {
-				display: table-column !important;
-			}
-
-			&--table-row {
-				display: table-row !important;
-			}
-
-			&--initial {
-				display: initial !important;
-			}
-
-			&--inherit {
-				display: inherit !important;
-			}
+	@each $name, $display in $displays {
+		&--#{$name} {
+			display: $display !important;
 		}
 	}
 }
 
-@include breakpoint-up(md) {
-	.md\: {
-		&hide {
-			display: none !important;
-		}
-
-		&show {
-			display: block !important;
-
-			&--inline {
-				display: inline !important;
+@each $point, $point_size in $grid-breakpoints {
+	@include breakpoint-up($point) {
+		.#{$point}\: {
+			&hide {
+				display: none !important;
 			}
 
-			&--block {
-				display: block !important;
-			}
-
-			&--contents {
-				display: contents !important;
-			}
-
-			&--flex {
-				display: flex !important;
-			}
-
-			&--grid {
-				display: grid !important;
-			}
-
-			&--inline-block {
-				display: inline-block !important;
-			}
-
-			&--inline-flex {
-				display: inline-flex !important;
-			}
-
-			&--inline-grid {
-				display: inline-grid !important;
-			}
-
-			&--inline-table {
-				display: inline-table !important;
-			}
-
-			&--list-item {
-				display: list-item !important;
-			}
-
-			&--run-in {
-				display: run-in !important;
-			}
-
-			&--table {
-				display: table !important;
-			}
-
-			&--table-caption {
-				display: table-caption !important;
-			}
-
-			&--table-column-group {
-				display: table-column-group !important;
-			}
-
-			&--table-header-group {
-				display: table-header-group !important;
-			}
-
-			&--table-footer-group {
-				display: table-footer-group !important;
-			}
-
-			&--table-row-group {
-				display: table-row-group !important;
-			}
-
-			&--table-cell {
-				display: table-cell !important;
-			}
-
-			&--table-column {
-				display: table-column !important;
-			}
-
-			&--table-row {
-				display: table-row !important;
-			}
-
-			&--initial {
-				display: initial !important;
-			}
-
-			&--inherit {
-				display: inherit !important;
-			}
-		}
-	}
-}
-
-@include breakpoint-up(lg) {
-	.lg\: {
-		&hide {
-			display: none !important;
-		}
-
-		&show {
-			display: block !important;
-
-			&--inline {
-				display: inline !important;
-			}
-
-			&--block {
-				display: block !important;
-			}
-
-			&--contents {
-				display: contents !important;
-			}
-
-			&--flex {
-				display: flex !important;
-			}
-
-			&--grid {
-				display: grid !important;
-			}
-
-			&--inline-block {
-				display: inline-block !important;
-			}
-
-			&--inline-flex {
-				display: inline-flex !important;
-			}
-
-			&--inline-grid {
-				display: inline-grid !important;
-			}
-
-			&--inline-table {
-				display: inline-table !important;
-			}
-
-			&--list-item {
-				display: list-item !important;
-			}
-
-			&--run-in {
-				display: run-in !important;
-			}
-
-			&--table {
-				display: table !important;
-			}
-
-			&--table-caption {
-				display: table-caption !important;
-			}
-
-			&--table-column-group {
-				display: table-column-group !important;
-			}
-
-			&--table-header-group {
-				display: table-header-group !important;
-			}
-
-			&--table-footer-group {
-				display: table-footer-group !important;
-			}
-
-			&--table-row-group {
-				display: table-row-group !important;
-			}
-
-			&--table-cell {
-				display: table-cell !important;
-			}
-
-			&--table-column {
-				display: table-column !important;
-			}
-
-			&--table-row {
-				display: table-row !important;
-			}
-
-			&--initial {
-				display: initial !important;
-			}
-
-			&--inherit {
-				display: inherit !important;
+			&show {
+				@each $name, $display in $displays {
+					&--#{$name} {
+						display: $display !important;
+					}
+				}
 			}
 		}
 	}
@@ -409,50 +45,20 @@
 	pointer-events: all;
 }
 
-@include breakpoint-up(sm) {
-	.sm\: {
-		&stealth {
-			opacity: 0;
-			visibility: hidden;
-			pointer-events: none;
-		}
-
-		&unstealth {
-			opacity: 1;
-			visibility: visible;
-			pointer-events: all;
-		}
-	}
-}
-
-@include breakpoint-up(md) {
-	.md\: {
-		&stealth {
-			opacity: 0;
-			visibility: hidden;
-			pointer-events: none;
-		}
-
-		&unstealth {
-			opacity: 1;
-			visibility: visible;
-			pointer-events: all;
-		}
-	}
-}
-
-@include breakpoint-up(lg) {
-	.lg\: {
-		&stealth {
-			opacity: 0;
-			visibility: hidden;
-			pointer-events: none;
-		}
-
-		&unstealth {
-			opacity: 1;
-			visibility: visible;
-			pointer-events: all;
+@each $point, $point_size in $grid-breakpoints {
+	@include breakpoint-up($point) {
+		.#{$point}\: {
+			&stealth {
+				opacity: 0;
+				visibility: hidden;
+				pointer-events: none;
+			}
+	
+			&unstealth {
+				opacity: 1;
+				visibility: visible;
+				pointer-events: all;
+			}
 		}
 	}
 }
