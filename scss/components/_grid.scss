@@ -3,45 +3,24 @@
  */
 
 .row,
-.row__full {
+.row--full {
 	@extend %row;
 }
 
 .row {
-	max-width: $lg;
+	max-width: $max-width;
 }
 
 .col {
 	@include alternative-col();
 }
 
-
-.xs\: {
-	&col {
-		@include alternative-col();
-	}
-}
-
-@include breakpoint(sm) {
-	.sm\: {
-		&col {
-			@include alternative-col();
-		}
-	}
-}
-
-@include breakpoint(md) {
-	.md\: {
-		&col {
-			@include alternative-col();
-		}
-	}
-}
-
-@include breakpoint(lg) {
-	.lg\: {
-		&col {
-			@include alternative-col();
+@each $point, $point_size in $grid-breakpoints {
+	@include breakpoint-up($point) {
+		.#{$point}\: {
+			&col {
+				@include alternative-col();
+			}
 		}
 	}
 }

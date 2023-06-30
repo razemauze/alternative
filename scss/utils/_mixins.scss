@@ -33,12 +33,18 @@
 	}
 }
 
-@mixin breakpoint($point) {
-    @if $point == sm {
-        @media (min-width: 768px) { @content; }
-    } @else if $point == md {
-        @media (min-width: 1024px) { @content; }
-    } @else if $point == lg {
-        @media (min-width: 1400px)  { @content; }
+@mixin breakpoint-up($point, $breakpoints: $grid-breakpoints) {
+    @if map-has-key($breakpoints, $point) {
+		$breakpoint: map-get($breakpoints, $point);
+
+		@media (min-width: #{$breakpoint}) { @content; }
     }
+}
+
+@mixin breakpoint-down($point, $breakpoints: $grid-breakpoints) {
+	@if map-has-key($breakpoints, $point) {
+		$breakpoint: map-get($breakpoints, $point);
+	}
+	
+	@media (min-width: #{$breakpoint - 1}) { @content; }
 }

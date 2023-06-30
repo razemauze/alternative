@@ -1,0 +1,34 @@
+@each $name,
+$size in $widths {
+	.w-#{$name} {
+		width: #{$size};
+	}
+
+	.min-w-#{$name} {
+		min-width: #{$size};
+	}
+
+	.max-w-#{$name} {
+		max-width: #{$size};
+	}
+}
+
+@each $point, $point_size in $grid-breakpoints {
+	@include breakpoint-up($point) {
+		.#{$point}\: {
+			@each $name, $size in $widths {
+				&w-#{$name} {
+					width: #{$size};
+				}
+
+				&min-w-#{$name} {
+					min-width: #{$size};
+				}
+
+				&max-w-#{$name} {
+					max-width: #{$size};
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+@each $name, $size in $heights {
+	.h-#{$name} {
+		height: #{$size};
+	}
+	
+	.min-h-#{$name} {
+		min-height: #{$size};
+	}
+	
+	.max-h-#{$name} {
+		max-height: #{$size};
+	}
+}
+
+@each $point, $point_size in $grid-breakpoints {
+	@include breakpoint-up($point) {
+		.#{$point}\: {
+			@each $name, $size in $heights {
+				&h-#{$name} {
+					height: #{$size};
+				}
+
+				&min-h-#{$name} {
+					min-height: #{$size};
+				}
+
+				&max-h-#{$name} {
+					max-height: #{$size};
+				}
+			}
+		}
+	}
+}

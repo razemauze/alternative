@@ -2,7 +2,7 @@
 	@include order();
 }
 
-@include breakpoint(sm) {
+@include breakpoint-up(sm) {
 	.sm\: {
 		&order {
 			@include order();
@@ -10,7 +10,7 @@
 	}
 }
 
-@include breakpoint(md) {
+@include breakpoint-up(md) {
 	.md\: {
 		&order {
 			@include order();
@@ -18,7 +18,7 @@
 	}
 }
 
-@include breakpoint(lg) {
+@include breakpoint-up(lg) {
 	.lg\: {
 		&order {
 			@include order();

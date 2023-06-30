@@ -24,91 +24,33 @@
 	}
 }
 
-@include breakpoint(sm) {
-	.sm\: {
-		@each $size, $length in $spacers {
-			&pt-#{$size},
-			&py-#{$size} {
-				padding-top: $length;
-			}
-			
-			&pb-#{$size},
-			&py-#{$size} {
-				padding-bottom: $length;
-			}
-			
-			&ps-#{$size},
-			&px-#{$size} {
-				padding-left: $length;
-			}
-			
-			&pe-#{$size},
-			&px-#{$size} {
-				padding-right: $length;
-			}
-			
-			&p-#{$size} {
-				padding: $length;
-			}
-		}
-	}
-}
-
-@include breakpoint(md) {
-	.pd\: {
-		@each $size, $length in $spacers {
-			&pt-#{$size},
-			&py-#{$size} {
-				padding-top: $length;
-			}
-			
-			&pb-#{$size},
-			&py-#{$size} {
-				padding-bottom: $length;
-			}
-			
-			&ps-#{$size},
-			&px-#{$size} {
-				padding-left: $length;
-			}
-			
-			&pe-#{$size},
-			&px-#{$size} {
-				padding-right: $length;
-			}
-			
-			&p-#{$size} {
-				padding: $length;
-			}
-		}
-	}
-}
-
-@include breakpoint(lg) {
-	.lg\: {
-		@each $size, $length in $spacers {
-			&pt-#{$size},
-			&py-#{$size} {
-				padding-top: $length;
-			}
-			
-			&pb-#{$size},
-			&py-#{$size} {
-				padding-bottom: $length;
-			}
-			
-			&ps-#{$size},
-			&px-#{$size} {
-				padding-left: $length;
-			}
-			
-			&pe-#{$size},
-			&px-#{$size} {
-				padding-right: $length;
-			}
-			
-			&p-#{$size} {
-				padding: $length;
+@each $point, $point_size in $grid-breakpoints {
+	@include breakpoint-up($point) {
+		.#{$point}\: {
+			@each $size, $length in $spacers {
+				&pt-#{$size},
+				&py-#{$size} {
+					padding-top: $length;
+				}
+				
+				&pb-#{$size},
+				&py-#{$size} {
+					padding-bottom: $length;
+				}
+				
+				&ps-#{$size},
+				&px-#{$size} {
+					padding-left: $length;
+				}
+				
+				&pe-#{$size},
+				&px-#{$size} {
+					padding-right: $length;
+				}
+				
+				&p-#{$size} {
+					padding: $length;
+				}
 			}
 		}
 	}

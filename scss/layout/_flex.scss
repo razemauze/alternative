@@ -34,7 +34,7 @@
 	}
 }
 
-@include breakpoint(sm) {
+@include breakpoint-up(sm) {
 	.sm\: {
 		&flex {
 			display: flex;
@@ -74,7 +74,7 @@
 	}
 }
 
-@include breakpoint(md) {
+@include breakpoint-up(md) {
 	.md\: {
 		&flex {
 			display: flex;
@@ -114,7 +114,7 @@
 	}
 }
 
-@include breakpoint(lg) {
+@include breakpoint-up(lg) {
 	.lg\: {
 		&flex {
 			display: flex;

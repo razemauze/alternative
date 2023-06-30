@@ -99,7 +99,7 @@
 	}
 }
 
-@include breakpoint(sm) {
+@include breakpoint-up(sm) {
 	.sm\: {
 		&hide {
 			display: none !important;
@@ -199,7 +199,7 @@
 	}
 }
 
-@include breakpoint(md) {
+@include breakpoint-up(md) {
 	.md\: {
 		&hide {
 			display: none !important;
@@ -299,7 +299,7 @@
 	}
 }
 
-@include breakpoint(lg) {
+@include breakpoint-up(lg) {
 	.lg\: {
 		&hide {
 			display: none !important;
@@ -413,7 +413,7 @@
 	pointer-events: all;
 }
 
-@include breakpoint(sm) {
+@include breakpoint-up(sm) {
 	.sm\: {
 		&stealth {
 			opacity: 0;
@@ -429,7 +429,7 @@
 	}
 }
 
-@include breakpoint(md) {
+@include breakpoint-up(md) {
 	.md\: {
 		&stealth {
 			opacity: 0;
@@ -445,7 +445,7 @@
 	}
 }
 
-@include breakpoint(lg) {
+@include breakpoint-up(lg) {
 	.lg\: {
 		&stealth {
 			opacity: 0;
