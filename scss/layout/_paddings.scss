@@ -1,26 +1,26 @@
 @each $size, $length in $spacers {
 	.pt-#{$size},
 	.py-#{$size} {
-		padding-top: $length;
+		padding-top: $length !important;
 	}
 	
 	.pb-#{$size},
 	.py-#{$size} {
-		padding-bottom: $length;
+		padding-bottom: $length !important;
 	}
 	
 	.ps-#{$size},
 	.px-#{$size} {
-		padding-left: $length;
+		padding-left: $length !important;
 	}
 	
 	.pe-#{$size},
 	.px-#{$size} {
-		padding-right: $length;
+		padding-right: $length !important;
 	}
 	
 	.p-#{$size} {
-		padding: $length;
+		padding: $length !important;
 	}
 }
 
@@ -30,26 +30,26 @@
 			@each $size, $length in $spacers {
 				&pt-#{$size},
 				&py-#{$size} {
-					padding-top: $length;
+					padding-top: $length !important;
 				}
 				
 				&pb-#{$size},
 				&py-#{$size} {
-					padding-bottom: $length;
+					padding-bottom: $length !important;
 				}
 				
 				&ps-#{$size},
 				&px-#{$size} {
-					padding-left: $length;
+					padding-left: $length !important;
 				}
 				
 				&pe-#{$size},
 				&px-#{$size} {
-					padding-right: $length;
+					padding-right: $length !important;
 				}
 				
 				&p-#{$size} {
-					padding: $length;
+					padding: $length !important;
 				}
 			}
 		}

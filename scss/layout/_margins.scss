@@ -1,26 +1,26 @@
 @each $size, $length in $spacers {
 	.mt-#{$size},
 	.my-#{$size} {
-		margin-top: $length;
+		margin-top: $length !important;
 	}
 	
 	.mb-#{$size},
 	.my-#{$size} {
-		margin-bottom: $length;
+		margin-bottom: $length !important;
 	}
 	
 	.ms-#{$size},
 	.mx-#{$size} {
-		margin-left: $length;
+		margin-left: $length !important;
 	}
 	
 	.me-#{$size},
 	.mx-#{$size} {
-		margin-right: $length;
+		margin-right: $length !important;
 	}
 	
 	.m-#{$size} {
-		margin: $length;
+		margin: $length !important;
 	}
 }
 
@@ -30,26 +30,26 @@
 			@each $size, $length in $spacers {
 				.mt-#{$size},
 				.my-#{$size} {
-					margin-top: $length;
+					margin-top: $length !important;
 				}
 				
 				.mb-#{$size},
 				.my-#{$size} {
-					margin-bottom: $length;
+					margin-bottom: $length !important;
 				}
 				
 				.ms-#{$size},
 				.mx-#{$size} {
-					margin-left: $length;
+					margin-left: $length !important;
 				}
 				
 				.me-#{$size},
 				.mx-#{$size} {
-					margin-right: $length;
+					margin-right: $length !important;
 				}
 				
 				.m-#{$size} {
-					margin: $length;
+					margin: $length !important;
 				}
 			}
 		}
