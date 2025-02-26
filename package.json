@@ -1,21 +1,21 @@
 {
-  "name": "bazuka-theme",
-  "version": "1.0.0",
-  "description": "Wordpress Theme for Bazuka-sites",
+  "name": "alternative",
+  "version": "1.0.7",
+  "description": "An alternative for Bootstrap and other grid-frameworks",
   "main": "gulpfile.js",
   "scripts": {
     "test": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BazukaDK/bazuka-theme.git"
+    "url": "git+https://github.com/razemauze/alternative.git"
   },
   "author": "Rasmus Bihl Andersson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BazukaDK/bazuka-theme/issues"
+    "url": "https://github.com/razemauze/alternative/issues"
   },
-  "homepage": "https://github.com/BazukaDK/bazuka-theme#readme",
+  "homepage": "https://github.com/razemauze/alternative#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
