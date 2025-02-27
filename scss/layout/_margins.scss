@@ -28,27 +28,27 @@
 	@include breakpoint-up($point) {
 		.#{$point}\: {
 			@each $size, $length in $spacers {
-				&.mt-#{$size},
-				&.my-#{$size} {
+				&mt-#{$size},
+				&my-#{$size} {
 					margin-top: $length !important;
 				}
 				
-				&.mb-#{$size},
-				&.my-#{$size} {
+				&mb-#{$size},
+				&my-#{$size} {
 					margin-bottom: $length !important;
 				}
 				
-				&.ms-#{$size},
-				&.mx-#{$size} {
+				&ms-#{$size},
+				&mx-#{$size} {
 					margin-left: $length !important;
 				}
 				
-				&.me-#{$size},
-				&.mx-#{$size} {
+				&me-#{$size},
+				&mx-#{$size} {
 					margin-right: $length !important;
 				}
 				
-				&.m-#{$size} {
+				&m-#{$size} {
 					margin: $length !important;
 				}
 			}
