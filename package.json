@@ -1,6 +1,6 @@
 {
   "name": "alternative",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "An alternative for Bootstrap and other grid-frameworks",
   "main": "gulpfile.js",
   "scripts": {
