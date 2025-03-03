@@ -1,5 +1,5 @@
 .flex {
-	display: flex;
+	display: flex !important;
 }
 
 .flex-row {
@@ -38,7 +38,7 @@
 	@include breakpoint-up($point) {
 		.#{$point}\: {
 			&flex {
-				display: flex;
+				display: flex !important;
 			}
 			
 			&flex-row {
